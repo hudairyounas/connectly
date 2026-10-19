@@ -1,0 +1,15 @@
+{
+  "name": "connectly-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Connectly — Full-Stack Real-Time Messaging Platform",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix server run build && npm --prefix client run build",
+    "typecheck": "npm --prefix server run typecheck && npm --prefix client run typecheck",
+    "test:server": "npm --prefix server run test",
+    "test:client": "npm --prefix client run test",
+    "test": "npm run test:server && npm run test:client"
+  }
+}
